@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Intranet - Lycée Notre Dame du ROC</title>
+        <link rel="icon" type="image/png" href="http://lycee-ndduroc.ovny85.atester.fr//images/design/favicon.png" />
+
+        <!-- Bootstrap core CSS -->
+        <link href="../../sb-admin/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Add custom CSS here -->
+        <link href="../../sb-admin/css/sb-admin.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../sb-admin/font-awesome/css/font-awesome.min.css">
+        <!-- Page Specific CSS -->
+        <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Notre Dame Du ROC</span>
+                    </button>
+                    <a class="navbar-brand" href="../../index.html">Intranet Lycée Notre Dame Du ROC</a>
+                </div>
+
+                <!-- Barre de navigation à gauche -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit"></i> Notre Dame Du ROC <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Présentation/présentation.html">Présentation générale </a></li>
+                                <li><a href="../Règlements/règlements.html">Les règlements</a></li>
+                                <li><a href="personnels.html">Les personnels (photos)</a></li>
+                                <li><a href="../../Enseignants/Classe/liste.html">Photos et listes des élèves </a></li>                                <li><a href="../Formations/formations.html">Les formations</a></li>
+                                <li><a href="../Batiments/plan.html">Plan du lycée</a></li>
+                                <li><a href="../Feuilles_Vertes/feuille_verte.html">Feuille verte et ses historiques</a></li>
+                                <li><a href="../Ouverture_Internationale/ouverture.html">L'ouverture à l'internationale</a></li>
+                            </ul>
+                        </li>                        
+                        <!-- Informations à savoir -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-dashboard"></i> Informations à savoir <b class="caret"></b></a>
+                               <ul class="dropdown-menu">
+                                <li><a href="../../Informations_a_savoir/Matériel/matériel.html">Matériel</a></li>
+                                <li><a href="../../Informations_a_savoir/Self/self.html">Self</a></li>
+                                <li><a href="../../Informations_a_savoir/Absences/absences.html">Que faire en cas d'absences ?</a></li>
+                                <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dDFVMHNkdTlVQ3lJc19UM29Ia1BSR3c6MQ">Ordre de mission</a></li>
+                                <li><a href="../../Informations_a_savoir/SEPA/sepa.html">Mandat de prélèvement SEPA</a></li>
+                            </ul>
+                        </li>
+                        <!-- Informatique -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-desktop"></i> Informatique <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../Informatique/Maintenance/maintenance.html">Pannes Informatiques </a></li>
+                                <li><a href="http://dex.ndduroc.com/labolangues">Réservation Labo de langues</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right navbar-user">
+                        <!-- Documentation -->
+                        <li class="dropdown messages-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-book"></i> Documentation <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="divider"></li>
+                                <li class="message-preview">
+                                    <a href="#">
+                                        <a href="http://0851460a.esidoc.fr"> Esidoc</a>
+                                        <a href="http://05serv-cdi/bcdiweb/bcdiweb.cgi/data"> BCDIWeb</a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Enseignant -->
+                        <li class="dropdown message-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Enseignant <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="divider"></li>
+                                <li class="message-preview">
+                                    <a href="#">
+                                        <a href="../../Enseignants/Classe/liste.html">Photos et listes des élèves </a>
+                                        <a href="http://www.scolinfo.net/">Notes Scolinfo </a>
+                                        <a href="../../Enseignants/Fiches/fiches.html">Fiches à compléter </a>
+                                        <a href="http://ndduroc.e-lyco.fr/">E-lyco </a>
+                                        <a href="http://moodroc.ndduroc.com/moodle">Moodroc </a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-header">
+                        <h2 id="nav-tabs">Les personnels</h2>
+                        </div>
+                        <div class="personnels">
+                            <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                                <li class="active"><a href="#Professeurs" data-toggle="tab">Professeurs</a></li>
+                                <li><a href="#Personnel" data-toggle="tab">Personnels OGEC</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane fade active in" id="Professeurs">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover tablesorter">
+                                            <!-- Ici, les photos des professeurs ce situe dans le dossiers Photos
+                                                Le plus simple est de garder les mêmes noms de photos d'une année sur l'autre et de les changer 
+                                            directement dans le dossier Photos.
+                                            -->
+                                            <tbody>
+                                                <tr>
+                                                    <td><p><a href="Photos/Art.pdf" >ARTS V.S.P. T.B.S.</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/EconomieGestionInfo.pdf">Economie Gestion & Info</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/Eps.pdf">E.P.S.</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/Sorbet.pdf">Hotellerie Restauration Alimentation</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/LettreHistGeoLangue.pdf">Lettres & Histoire-Géo & Langues</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/MathScience.pdf">Maths & Sciences</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/MetierMode.pdf">Métiers de la mode</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/ComBureautiqueVente.pdf">Métiers du tertiaire</a></p></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Personnel">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover tablesorter">
+                                            <!-- C'est exactement la même chose que pour les professeurs -->
+                                            <tbody>
+                                                <tr>
+                                                    <td><p><a href="Photos/Direction.pdf">Direction</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/DirectionElargie.pdf">Direction élargie</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/Administration.pdf">Administration</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/CDI.pdf">CDI</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/Infirmerie.pdf">Infirmerie</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/CFPCFA.pdf">CFP– CFA</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/Educateurs.pdf">Educateurs</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><a href="Photos/MenageMaintenance.pdf">Maintenance</a></p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><p><p><a href="Photos/Restauration.pdf">Restauration</a></p></a></p></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </div><!-- /#page-wrapper -->
+
+        </div><!-- /#wrapper -->
+
+        <!-- JavaScript -->
+        <script src="../../sb-admin/js/jquery-1.10.2.js"></script>
+        <script src="../../sb-admin/js/bootstrap.js"></script>
+
+        <!-- Page Specific Plugins -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+        <script src="../../sb-admin/js/morris/chart-data-morris.js"></script>
+        <script src="../../sb-admin/js/tablesorter/jquery.tablesorter.js"></script>
+        <script src="../../sb-admin/js/tablesorter/tables.js"></script>
+
+    </body>
+</html>

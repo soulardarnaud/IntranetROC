@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Intranet - Lycée Notre Dame du ROC</title>
+        <link rel="icon" type="image/png" href="http://lycee-ndduroc.ovny85.atester.fr//images/design/favicon.png" />
+
+        <!-- Bootstrap core CSS -->
+        <link href="../../sb-admin/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Add custom CSS here -->
+        <link href="../../sb-admin/css/sb-admin.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../sb-admin/font-awesome/css/font-awesome.min.css">
+        <!-- Page Specific CSS -->
+        <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Notre Dame Du ROC</span>
+                    </button>
+                    <a class="navbar-brand" href="../../index.html">Intranet Lycée Notre Dame Du ROC</a>
+                </div>
+
+                <!-- Barre de navigation à gauche -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit"></i> Notre Dame Du ROC <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../Présentation/présentation.html">Présentation générale </a></li>
+                                <li><a href="../Règlements/règlements.html">Les règlements</a></li>
+                                <li><a href="../Règlements/règlements.html">Les règlements</a></li>
+                                <li><a href="../Personnels/personnels.html">Les personnels (photos)</a></li>
+                                <li><a href="../../Enseignants/Classe/liste.html">Photos et listes des élèves </a></li>                                
+                                <li><a href="../Batiments/plan.html">Plan du lycée</a></li>
+                                <li><a href="feuille_verte.html">Feuille verte et ses historiques</a></li>
+                                <li><a href="../Ouverture_Internationale/ouverture.html">L'ouverture à l'internationale</a></li>
+                            </ul>
+                        </li>                        
+                        <!-- Informations à savoir -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-dashboard"></i> Informations à savoir <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../Informations_a_savoir/Matériel/matériel.html">Matériel</a></li>
+                                <li><a href="../../Informations_a_savoir/Self/self.html">Self</a></li>
+                                <li><a href="../../Informations_a_savoir/Absences/absences.html">Que faire en cas d'absences ?</a></li>
+                                <li><a href="https://docs.google.com/spreadsheet/viewform?formkey=dDFVMHNkdTlVQ3lJc19UM29Ia1BSR3c6MQ">Ordre de mission</a></li>
+                                <li><a href="../../Informations_a_savoir/SEPA/sepa.html">Mandat de prélèvement SEPA</a></li>
+                            </ul>
+                        </li>
+                        <!-- Informatique -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-desktop"></i> Informatique <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../Informatique/Maintenance/maintenance.html">Pannes Informatiques </a></li>
+                                <li><a href="http://dex.ndduroc.com/labolangues">Réservation Labo de langues</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right navbar-user">
+                        <!-- Documentation -->
+                        <li class="dropdown messages-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-book"></i> Documentation <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="divider"></li>
+                                <li class="message-preview">
+                                    <a href="#">
+                                        <a href="http://0851460a.esidoc.fr"> Esidoc</a>
+                                        <a href="http://05serv-cdi/bcdiweb/bcdiweb.cgi/data"> BCDIWeb</a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Enseignant -->
+                        <li class="dropdown message-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Enseignant <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="divider"></li>
+                                <li class="message-preview">
+                                    <a href="#">
+                                        <a href="../../Enseignants/Classe/liste.html">Photos et listes des élèves </a>
+                                        <a href="http://www.scolinfo.net/">Notes Scolinfo </a>
+                                        <a href="../../Enseignants/Fiches/fiches.html">Fiches à compléter </a>
+                                        <a href="http://ndduroc.e-lyco.fr/">E-lyco </a>
+                                        <a href="http://moodroc.ndduroc.com/moodle">Moodroc </a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-header">
+                            <h2 id="nav-tabs">Feuille Verte</h2>
+                        </div>
+                        <div class="feuille_verte">
+                            <!-- ICI, il y a les Titres des onglets ainsi que leurs id ex #semaine 
+                                pour la semaine qui fait référence à l'ID situé après                            
+                            -->
+                            <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                                <li class="active"><a href="#semaine" data-toggle="tab">Cette semaine</a></li>
+                                <li><a href="#année" data-toggle="tab">Cette année</a></li>
+                                <li><a href="#2012-2013" data-toggle="tab">Année 2012-2013</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                
+                                <!-- Il y a id="semaine", ce qui permet d'afficher en dessous du titre Cette semaine
+                                C'est ici qu'il faut changer le pdf pour la feuille verte de la semaine -->
+                                <div class="tab-pane fade active in" id="semaine">
+                                    <iframe src="2013-2014/20140127.pdf" width="900" height="700" align="center"></iframe>
+                                </div>
+                                
+                                <!-- C'est ici qu'il y a toutes les feuilles vertes de l'année en cours.
+                                    Il donc ajouter la feuille verte de la semaine en cours après celle de la semaine d'avant
+                                COMME CECI : 
+                                    <a href="AnnéeScol/aaaammjj.pdf"> Semaine XX</a><br>
+                                    jour 4premièresLettresMois Année
+                                EXEMPLE :
+                                    <a href="2013-2014/20140127.pdf">Semaine 17</a><br>
+                                    27 Janv 2014                                
+                                -->
+                                <div class="tab-pane fade" id="année">
+                                    <p>
+                                    <div class='col-lg-12'>
+                                        <div class='table-responsive'>
+                                            <table class='table table-bordered table-hover table-striped tablesorter'>
+
+                                                <tbody><tr>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2013-2014/20130909.pdf">Semaine 1</a><br>
+                                                            09 Sept 2013
+                                                        </td>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2013-2014/20130916.pdf">Semaine 2</a><br>
+                                                            16 Sept 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20130923.pdf">Semaine 3</a><br>
+                                                            23 Sept 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20130930.pdf">Semaine 4</a><br>
+                                                            30 Sept 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20131007.pdf">Semaine 5</a><br>
+                                                            07 Oct 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20131014.pdf">Semaine 6</a><br>
+                                                            14 Oct 2013
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2013-2014/20131104.pdf">Semaine 7</a><br>
+                                                            04 Nov 2013
+                                                        </td>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2013-2014/20131112.pdf">Semaine 8</a><br>
+                                                            12 Nov 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20131118.pdf">Semaine 9</a><br>
+                                                            18 Nov 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20131125.pdf">Semaine 10</a><br>
+                                                            25 Nov 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20131202.pdf">Semaine 11</a><br>
+                                                            02 Déc 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20131209.pdf">Semaine 12</a><br>
+                                                            09 Déc 2013
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2013-2014/20131216.pdf">Semaine 13</a><br>
+                                                            16 Déc 2013
+                                                        </td>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2013-2014/20140106.pdf">Semaine 14</a><br>
+                                                            06 Janv 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20140113.pdf">Semaine 15</a><br>
+                                                            13 Janv 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20140120.pdf">Semaine 16</a><br>
+                                                            20 Janv 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2013-2014/20140127.pdf">Semaine 17</a><br>
+                                                            27 Janv 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            Semaine 18<br>
+                                                            03 Fév 2014
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="20">
+                                                            Semaine 18<br>
+                                                            03 Fév 2014
+                                                        </td>
+                                                        <td width="16%" align="center" height="20">
+                                                            Semaine 19<br>
+                                                            10 Fév 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="20">
+                                                            Semaine 20<br>
+                                                            17 Fév 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="20">
+                                                            Semaine 21<br>
+                                                            24 Fév 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="20">
+                                                            Semaine 22<br>
+                                                            17 Mars 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="20">
+                                                            Semaine 23<br>
+                                                            24 Mars 2014
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="19">
+                                                            Semaine 25<br>
+                                                            31 Mars 2014
+                                                        </td>
+                                                        <td width="16%" align="center" height="19">
+                                                            Semaine 26<br>
+                                                            07 Mars 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                            Semaine 27<br>
+                                                            14 Mars 2014
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="19">
+                                                        </td>
+                                                        <td width="16%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    </p>
+                                </div>
+                                
+                                <!-- Ici, il y a l'historique des feuilles vertes de 2012-2013
+                                    Comme nous le voyons l'ID fait référence au #2012-2013
+                                Pour l'année prochain, il faudra remplacer tous le <tbody> par l'année 2013-2014
+                                et ainsi de suite.
+                                -->
+                                <div class="tab-pane fade" id="2012-2013">
+                                    <p>
+                                    <div class='col-lg-12'>
+                                        <div class='table-responsive'>
+                                            <table class='table table-bordered table-hover table-striped tablesorter'>
+
+                                                <tbody>                                                    <tr>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2012-2013/20120910.pdf">Semaine 1</a><br>
+                                                            10 Sept 2012
+                                                        </td>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2012-2013/20120917.pdf">Semaine 2</a><br>
+                                                            17 Sept 2012
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20120924.pdf">Semaine 3</a><br>
+                                                            24 Sept 2012
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20121001.pdf">Semaine 4</a><br>
+                                                            01 Oct 2012
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20121008.pdf">Semaine 5</a><br>
+                                                            08 Oct 2012
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20121015.pdf">Semaine 6</a><br>
+                                                            15 Oct 2012
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2012-2013/20121022.pdf">Semaine 7</a><br>
+                                                            22 Oct 2012
+                                                        </td>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2012-2013/20121112.pdf">Semaine 8</a><br>
+                                                            12 Nov 2012
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20121119.pdf">Semaine 9</a><br>
+                                                            19 Nov 2012
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20121126.pdf">Semaine 10</a><br>
+                                                            26 Nov 2012
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20121203.pdf">Semaine 11</a><br>
+                                                            03 Déc 2012
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20121210.pdf">Semaine 12</a><br>
+                                                            10 Déc 2012
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2012-2013/20121217.pdf">Semaine 13</a><br>
+                                                            17 Déc 2012
+                                                        </td>
+                                                        <td width="16%" align="center" height="38">
+                                                            <a href="2012-2013/20130107.pdf">Semaine 14</a><br>
+                                                            07 Janv 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20130114.pdf">Semaine 15</a><br>
+                                                            14 Janv 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20130121.pdf">Semaine 16</a><br>
+                                                            21 Janv 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20130128.pdf">
+                                                                Semaine 17</a><br>
+                                                            28 Janv 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="38">
+                                                            <a href="2012-2013/20130204.pdf">Semaine 18</a><br>
+                                                            04 Fév 2013
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="20">
+                                                            <a href="2012-2013/20130211.pdf">Semaine 19</a><br>
+                                                            11 Fév 2013
+                                                        </td>
+                                                        <td width="16%" align="center" height="20">
+                                                            <a href="2012-2013/20130218.pdf">Semaine 20</a><br>
+                                                            18 Fév 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="20">
+                                                            <a href="2012-2013/20130311.pdf">Semaine 21</a><br>
+                                                            11 Mars 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="20">
+                                                            <a href="2012-2013/20130318.pdf">Semaine 22</a><br>
+                                                            18 Mars 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="20">
+                                                            <a href="2012-2013/20130325.pdf">Semaine 23</a><br>
+                                                            25 Mars 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="20">
+                                                            <a href="2012-2013/20130402.pdf">Semaine 24</a><br>
+                                                            02 Avril 2013
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="19">
+                                                            <a href="2012-2013/20130408.pdf">Semaine 25</a><br>
+                                                            08 Avril 2013
+                                                        </td>
+                                                        <td width="16%" align="center" height="19">
+                                                            <a href="2012-2013/20130415.pdf">Semaine 26</a><br>
+                                                            15 Avril 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                            <a href="2012-2013/20130506.pdf">Semaine 27</a><br>
+                                                            06 Mai 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                            <a href="2012-2013/20130521.pdf">Semaine 28</a><br>
+                                                            21 Mai 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                            <a href="2012-2013/20130527.pdf">Semaine 29</a><br>
+                                                            27 Mai 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                            <a href="2012-2013/20130603.pdf">Semaine 30</a><br>
+                                                            03 Juin 2013
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="16%" align="center" height="19">
+                                                            <a href="2012-2013/20130610.pdf">Semaine 31</a><br>
+                                                            10 Juin 2013
+                                                        </td>
+                                                        <td width="16%" align="center" height="19">
+                                                            <a href="2012-2013/20130617.pdf">Semaine 32</a><br>
+                                                            17 Juin 2013
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                        <td width="17%" align="center" height="19">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div><!-- /#page-wrapper -->
+
+            </div><!-- /#wrapper -->
+
+            <!-- JavaScript -->
+            <script src="../../sb-admin/js/jquery-1.10.2.js"></script>
+            <script src="../../sb-admin/js/bootstrap.js"></script>
+
+            <!-- Page Specific Plugins -->
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2l.1.0/raphael-min.js"></script>
+            <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+            <script src="../../sb-admin/js/morris/chart-data-morris.js"></script>
+            <script src="../../sb-admin/js/tablesorter/jquery.tablesorter.js"></script>
+            <script src="../../sb-admin/js/tablesorter/tables.js"></script>
+
+    </body>
+</html>
